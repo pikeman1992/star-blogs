@@ -12,9 +12,9 @@
       
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       
-      <v-toolbar-title class="title">
-        <h5>{{mainTitle}}</h5>
-      </v-toolbar-title>
+      <div class="title">
+        <v-icon>account_circle</v-icon>
+      </div>
 
     </v-toolbar>
 
@@ -28,8 +28,10 @@
 
     </v-content>
 
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; 2017</span>
+    <v-footer  color="indigo" app>
+      <div class="app-footer">
+        <span class="white--text">Star Blog - Copyright &copy; 2018</span>
+      </div>
     </v-footer>
 
   </v-app>
@@ -67,7 +69,17 @@ export default {
 
 <style>
 .title {
+  text-align: right;
+  width: 100%;
+  margin-right: unset;
+}
+.title i{
+  font-size: 170%;
+}
+.app-footer{
   width: 100%;
   text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 </style>

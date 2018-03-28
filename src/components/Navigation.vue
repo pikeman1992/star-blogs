@@ -1,16 +1,20 @@
 <template>
   <div id="navigation">
 
-    <div class="navigation_avatar">
-      <v-avatar size="150px" tile="true">
-        <img src="../assets/hammer.png" alt="avatar">
-      </v-avatar>
-    </div>
+    <div class="navi-first-section">
 
-    <div class="navigation_title">
-      <h2>{{authorName}}</h2>
-    </div>
+      <div class="navigation_avatar">
+        <v-avatar size="150px" tile="true">
+          <img src="../assets/hammer.png" alt="avatar">
+        </v-avatar>
+      </div>
 
+      <div class="navigation_title">
+        <h2>{{authorName}}</h2>
+      </div>
+
+    </div>
+    
     <div class="list_container">
       <v-list  dense>
 
@@ -126,11 +130,10 @@ export default {
 
 <style scoped>
 .navigation_avatar {
-  margin: 20px auto;
   text-align: center;
 }
 .navigation_title {
-  margin-bottom: 20px;
+  margin-top: 5px;
   text-align: center;
 }
 .list_container {
@@ -142,5 +145,9 @@ export default {
 .list_title {
   border-bottom: 1px;
   border-bottom-style: solid;
+}
+.navi-first-section{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 </style>

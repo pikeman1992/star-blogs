@@ -8,7 +8,7 @@
         <v-card-title>
           <div>
             <h3>{{product.name}}</h3>
-            <h4>{{product.price}} $</h4>
+            <h4>{{product.price}} $ X {{qtyInCart}}</h4>
           </div>
         </v-card-title>
 

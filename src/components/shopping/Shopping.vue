@@ -2,8 +2,12 @@
 
     <v-layout row wrap id="cart">
 
+      
+
       <v-flex xs12 md8>
-        
+
+        <h2 class="cart-title">PRODUCT LIST</h2>
+
         <v-layout row wrap id="product-list">
 
           <v-flex xs12 sm6 lg4 v-for="(item,key) in itemList" :key="key">
@@ -50,7 +54,6 @@ export default {
           for (let key in data) {
             data[key].id = key;
             this.itemList.push(data[key]);
-            console.log(data);
           }
         });
     }
@@ -64,8 +67,12 @@ export default {
 
 
 <style scoped>
-.video-container {
-  max-width: 500px;
-  margin: auto;
+.cart-title {
+  background-color: rgb(45, 54, 138);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 </style>
