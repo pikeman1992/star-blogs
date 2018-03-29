@@ -1,14 +1,14 @@
 <template>
   <div id="single-blog">
 
-      <div class="image-container">
+      <!-- <div class="image-container">
         <img v-bind:src="blog.imgUrl" />
-      </div>
+      </div> -->
 
       <h1>{{blog.title}}</h1>
 
       <div class="author">
-        <h2>Author: </h2>
+        <h2>Uploader: </h2>
         <h3>{{blog.author}}</h3>
       </div>
 
@@ -23,9 +23,10 @@
 
         <v-divider class="my-3"></v-divider>
 
-      <p>
-        {{blog.content}}
-      </p>
+      <div>
+        <span class="content-container" v-html="blog.content"></span>
+      </div>
+      
     
   </div>
 </template>
@@ -64,10 +65,7 @@ export default {
 <style scoped>
 #single-blog{
   margin: auto;
-  max-width: 400px;
-}
-.image-container img {
-  width: 100%;
+  /* max-width: 700px; */
 }
 h1 {
   text-align: center;
@@ -78,5 +76,11 @@ h1 {
 }
 .author h3{
   margin-left: 10px;
+}
+.content-container >>> img{
+  width: 100%;
+}
+.content-container >>> ul{
+  padding-left: 30px;
 }
 </style>

@@ -12,22 +12,6 @@
       Nothing is true, everything is coding
     </span>
 
-    <!-- <v-expansion-panel class="expansion-section">
-
-      <v-expansion-panel-content v-for="(item,i) in 3" :key="i">
-        
-        <div slot="header">Item</div>
-        
-        <v-card>
-
-            <v-card-text>
-
-            </v-card-text>
-        
-        </v-card>
-      </v-expansion-panel-content>
-
-    </v-expansion-panel> -->
   </div>
 </template>
 

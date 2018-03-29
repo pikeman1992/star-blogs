@@ -21,7 +21,7 @@
 
               <v-card-title class="card-title">
                 <h2>{{item.title}}</h2>
-                <article>{{item.content | snippet}}</article>
+                <article>{{item.subTitle | snippet}}</article>
               </v-card-title>
 
               <v-card-actions class="card-action">
