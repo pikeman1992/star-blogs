@@ -47,7 +47,7 @@ export default {
         return res.json();
       })
       .then(data => {
-        console.log(data);
+        // console.log(data);
         this.blog = data;
       });
     }

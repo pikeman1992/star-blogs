@@ -118,7 +118,7 @@ export default {
   },
   methods: {
     onChangeTitle(title) {
-      console.log("click me",title);
+      // console.log("click me",title);
       this.$emit("onClickChangeTitle", title);
     }
   },
